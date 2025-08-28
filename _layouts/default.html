@@ -7,8 +7,8 @@ All other pages extend this layout. -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title>
-    
+    <!-- <title>{{ page.title }} - {{ site.data.profile.navbar_name }}</title> -->
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: site.data.profile.navbar_name }}</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/images/etc/favicon.png' | relative_url }}">
 
