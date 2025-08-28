@@ -1,8 +1,11 @@
 ---
 layout: default
-title : Homepage
+title : 
 navbar_title: Home
 ---
+<!-- The main homepage that displays the profile information, recent news, and 
+selected publications. It uses data from profile.yml to show personal information and academic background. -->
+
 {% include widgets/profile_card.html %}
 
 {% include widgets/debug_repo_name.html %}
@@ -25,9 +28,17 @@ navbar_title: Home
     {% 
         include widgets/publication_card.html 
         publications=pubs
-        title='<i class="fas fa-star"></i> Selected Publications'
+        title='<i class="fas fa-star"></i>&nbsp;  Selected Publications'
     %}
 {% endif %}
 
-<!-- The main homepage that displays the profile information, recent news, and 
-selected publications. It uses data from profile.yml to show personal information and academic background. -->
+<!-- {% if site.data.display.homepage.show_professional_activities %}
+    {% include widgets/professional_activities.html %}
+{% endif %} -->
+
+{% include widgets/pro_acts.html %}
+
+{% include widgets/video.html %}
+
+<!-- Add Clustrmaps widget -->
+{% include widgets/pageview.html %}

@@ -17,6 +17,13 @@
                     <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
                 </li>
                 {% endfor %}
+                <!-- Dark Mode Toggle -->
+                <li class="nav-item">
+                    <button class="nav-link btn btn-link dark-mode-toggle" id="darkModeToggle" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon dark-mode-icon"></i>
+                        <i class="fas fa-sun light-mode-icon" style="display: none;"></i>
+                    </button>
+                </li>
             </ul>
         </div>
     </div>
