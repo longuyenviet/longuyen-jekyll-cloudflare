@@ -13,6 +13,7 @@ gem "jekyll-sass-converter", "~> 3.1"
 gem "base64"
 gem "logger"
 gem "bigdecimal"
+gem "jekyll-sitemap"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima", "~> 2.0"
