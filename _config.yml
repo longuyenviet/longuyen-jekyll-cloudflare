@@ -14,12 +14,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: ""
+description: "Researcher in AI and Quantum Computing for Wireless Communications"
+url: "https://longuyenviet.github.io"
+author:
+  name: "Long V. Nguyen"
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-email-protect
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

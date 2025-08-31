@@ -1,8 +1,8 @@
-# academic-homepage
+# Long's Academic Homepage
 
-![](assets/images/etc/preview.png)
+<!-- ![](assets/images/etc/preview.png) -->
 
-This is a GitHub Pages (Jekyll) template for personal academic website. The template is based on [this repo](https://github.com/luost26/academic-homepage).
+This is the repo for my personal academic website based on Jekyll template. The layout is inspired from [this repo](https://github.com/luost26/academic-homepage).
 
 Click [here](https://luost.me/academic-homepage/) to see the preview of the original template.
 
