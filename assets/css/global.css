@@ -2,7 +2,7 @@
 body {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
-    font-size: 16px;  /* increase base font size */
+    font-size: 17px;  /* increase base font size */
     padding-top: 5.0rem;
 }
 
@@ -18,13 +18,17 @@ h3, .h3 { font-size: 1.75rem; }
 h4, .h4 { font-size: 1.5rem; }
 h5, .h5 { font-size: 1.25rem; }
 h6, .h6 { font-size: 1rem; } */
+h6, .h6 { 
+    font-size: 1.2rem !important; 
+    font-weight: 700;
+}
 
 .card {
-    border-radius: 0.8rem!important;
+    border-radius: 0.8rem !important;
 }
 
 .card-img-overlay {
-    border-radius: 0.8rem!important;
+    border-radius: 0.8rem !important;
 }
 
 .rounded-xl {
@@ -41,7 +45,6 @@ h6, .h6 { font-size: 1rem; } */
     border-top-right-radius: 0.8rem !important;
 }
 
-
 .text-profile-position {
     font-weight: 400;
 }
@@ -56,22 +59,14 @@ h6, .h6 { font-size: 1rem; } */
     font-size: 1.05rem;
 }
 
-/* Blinking slash animation */
-.blinking-slash {
-    color: #f88030; /* Orange color */
-    animation: blink 1.4s infinite;
-    font-weight: 600;
-    margin-left: -4px;
-    font-size: 1.2em; /* Make it larger vertically */
+.navbar-brand:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    cursor: pointer;
 }
 
-@keyframes blink {
-    0%, 50% {
-        opacity: 1;
-    }
-    51%, 100% {
-        opacity: 0;
-    }
+.footer {
+    font-size: 0.85rem;
 }
 
 .inline-badge {
@@ -116,6 +111,26 @@ div.lazy {
 
 .email-text {
     font-family: Courier, monospace;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+/* Blinking slash animation after text */
+.blinking-slash {
+    color: #f88030; /* Orange color */
+    animation: blink 1.4s infinite;
+    font-weight: 700;
+    margin-left: -2px;
+    font-size: 1em; /* Make it larger vertically */
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
 }
 
 /* Dark Mode Toggle Button Styles */

@@ -1,10 +1,10 @@
 ---
 layout: default
-title : 
+title : Home
 navbar_title: Home
 ---
 <!-- The main homepage that displays the profile information, recent news, and 
-selected publications. It uses data from profile.yml to show personal information and academic background. -->
+selected publications. It uses yml files in _data to show personal information and academic background. -->
 
 {% include widgets/profile_card.html %}
 
@@ -12,9 +12,9 @@ selected publications. It uses data from profile.yml to show personal informatio
 
 {% include widgets/debug_url.html %}
 
-<!-- {% if site.data.display.homepage.show_experience %}
+{% if site.data.display.homepage.show_experience %}
     {% include widgets/experience_card.html %}
-{% endif %} -->
+{% endif %}
 
 {% if site.data.display.homepage.show_news %}
     {% assign count_news = site.news | size %}
@@ -32,13 +32,13 @@ selected publications. It uses data from profile.yml to show personal informatio
     %}
 {% endif %}
 
-<!-- {% if site.data.display.homepage.show_professional_activities %}
-    {% include widgets/professional_activities.html %}
-{% endif %} -->
+{% if site.data.display.homepage.show_professional_activities %}
+    {% include widgets/proac_card.html %}
+{% endif %}
 
-{% include widgets/pro_acts.html %}
-
-{% include widgets/video.html %}
+{% if site.data.display.homepage.show_videos %}
+    {% include widgets/video_card.html %}
+{% endif %}
 
 <!-- Add Clustrmaps widget -->
 {% include widgets/pageview.html %}
